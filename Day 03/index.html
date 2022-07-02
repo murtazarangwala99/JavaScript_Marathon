@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Marathon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Assignment for Day 3😀🌿🚀</h1>
+    <h2>1. List all the Escape Sequences characters in JavaScript.</h2>
+    <h3>
+      <table border="2px">
+        <tr>
+          <th>Code</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td><code>\b</code></td>
+          <td>Backspace</td>
+        </tr>
+        <tr>
+          <td><code>\f</code></td>
+          <td>Form Feed</td>
+        </tr>
+        <tr>
+          <td><code>\n</code></td>
+          <td>New Line</td>
+        </tr>
+        <tr>
+          <td><code>\r</code></td>
+          <td>Carriage Return</td>
+        </tr>
+        <tr>
+          <td><code>\t</code></td>
+          <td>Horizontal Tabulator</td>
+        </tr>
+        <tr>
+          <td><code>\v</code></td>
+          <td>Vertical Tabulator</td>
+        </tr>
+        <tr>
+          <td><code>\'</code></td>
+          <td>Single Quote</td>
+        </tr>
+        <tr>
+          <td><code>\"</code></td>
+          <td>Double Quote</td>
+        </tr>
+        <tr>
+          <td><code>\\</code></td>
+          <td>Backslash</td>
+        </tr>
+      </table>
+    </h3>
+
+    <h2>2. Explain with example length and substring methods in JavaScript</h2>
+    <h3>
+      <li>The length property returns the length of a string:</li>
+      <li>
+        Example:
+        <code>
+          <pre>
+      let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let length = txt.length;
+      console.log(length)
+      // output: 26
+          </pre>
+        </code>
+      </li>
+      <li>
+        Substring method extracts a part of a string and returns the extracted
+        part in a new string.
+      </li>
+      <li>
+        Same as Slice method, The difference is that start and end values less
+        than 0 are treated as 0 in substring.
+      </li>
+      <li>
+        Example:
+        <code>
+          <pre>
+      let str = "Apple, Banana, Kiwi";
+      let part = str.substring(7, 13);
+      // output : Banana
+          </pre>
+        </code>
+      </li>
+    </h3>
+
+    <h2>
+      3. What are padStart and padEnd in JavaScript, explain with an example.
+    </h2>
+    <h3>
+      <li>
+        <code> padStart()</code> and <code> padEnd() </code> to support padding
+        at the beginning and at the end of a string.
+      </li>
+      <li>
+        padEnd Method Example:<code>
+          <pre>
+      const str1 = 'Breaded Mushrooms';
+      console.log(str1.padEnd(25, '.'));
+      // output: "Breaded Mushrooms........"
+          </pre>
+        </code>
+      </li>
+      <li>padStart Method Example:</li>
+      <code>
+        <pre>
+      const str1 = '5';
+      console.log(str1.padStart(4, '0'));
+      // output: "0005"
+      const fullNumber = '2034399002125581';
+      const last4Digits = fullNumber.slice(-4);
+      const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+      console.log(maskedNumber);
+      // output: "************5581"
+        </pre>
+      </code>
+    </h3>
+
+    <h2>4. Define Global Object in JavaScript along with the global scope.</h2>
+    <h3>
+      <li>
+        Global Object: A global object is an object that always exists in the
+        global scope.
+      </li>
+      <li>In JavaScript, there's always a global object defined.</li>
+      <li>
+        In a web browser, when scripts create global variables defined with the
+        <code>var </code> keyword, they're created as members of the global
+        object.
+      </li>
+
+      <li>The window object is the Global Object in the Browser</li>
+      <li>
+        Global Scope: In a programming environment, the global scope is the
+        scope that contains, and is visible in, all other scopes.
+      </li>
+      <li>
+        In client-side JavaScript, the global scope is generally the web page
+        inside which all the code is being executed.
+      </li>
+    </h3>
+
+    <h2>5. List all the names of JavaScript engines present currently.</h2>
+    <h3>
+      <li>V8</li>
+      <li>Chakra</li>
+      <li>Spider Monkey</li>
+      <li>Javascript Core Webkit</li>
+    </h3>
+  </body>
+</html>

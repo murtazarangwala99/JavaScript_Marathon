@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+    /* border: 2px solid red; */
+    background-color: blanchedalmond;   
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 250px;
+}
+h1{
+  margin-left: 30%;
+}
+h2{
+  /* margin-top: 5px; */
+}
+h3{
+  /* margin-top: 10px; */
+}
+li{
+  padding: 5px;
+}
+table{
+  margin-left: 60px;
+  width: 350px;
+}
+td{
+  text-align: center;
+  padding: 5px;
+}
